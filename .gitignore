@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+readme.md
+.env
+.vscode
+src/publico/fotos

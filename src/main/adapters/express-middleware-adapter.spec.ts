@@ -1,0 +1,8 @@
+describe('adaptMiddleware', () => {
+  test('', () => {
+
+
+
+  })
+
+})
