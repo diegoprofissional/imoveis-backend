@@ -7,6 +7,8 @@ export class EnderecoModel {
   @PrimaryGeneratedColumn()
   id: number;
 
+
+
   @Column({ name: 'pais' })
   pais: string;
 
