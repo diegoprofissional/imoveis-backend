@@ -3,5 +3,4 @@ export interface Imovel {
   tipoImovel: string,
   preco: number,
   descricao: string,
-
 }
