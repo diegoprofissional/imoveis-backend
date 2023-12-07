@@ -7,6 +7,9 @@ export class ApartamentoVendaModel {
   @PrimaryGeneratedColumn()
   id: number
 
+
+
+
   @Column({ name: 'id_anunciante' })
   idAnunciante: number
 
