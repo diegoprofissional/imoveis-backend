@@ -1,12 +1,14 @@
 import { ConnectionOptions } from 'typeorm'
 
+console.log("output", process.env.POSTGRES_DATABASE)
+
 export const config: ConnectionOptions = {
   type: 'postgres',
   host: 'localhost',
   port: 5432,
-  username: 'postgres',
-  password: '23@!shhFTP',
-  database: 'imoveis_tdd',
+  username: process.env.POSTGRES_USER,
+  password: process.env.POSTGRES_PASSWORD,
+  database: process.env.POSTGRES_DATABASE,
   entities: ['src/infra/db/postgres/models/index.ts'],
   synchronize: false,
   logging: true,

@@ -6,7 +6,7 @@
   "scripts": {
     "go": "cd dist/src/main && node server.js",
     "start": "ts-node --logError src/main/server.ts",
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc && cp ./package.json ./dist/ && cp .env ./dist/",
     "migration": "npx typeorm migration:create -n migration -d src/infra/db/postgres/migrations",
     "debug": "node --inspect=0.0.0.0:9222 --nolazy dist/main/server.js",
     "dev": "sucrase-node src/main/server.ts",

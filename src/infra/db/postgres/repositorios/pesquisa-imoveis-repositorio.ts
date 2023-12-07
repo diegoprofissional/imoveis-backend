@@ -1,12 +1,10 @@
-import { config } from "../../../../../config/pg-config";
 import { CarregaImoveisResidenciaisDestaque } from "../../../../data/protocols/carrega-imoveis-residenciais-destaque";
 import { PesquisaImoveisResidenciais } from "../../../../data/protocols/pesquisa-imoveis-residenciais";
 import { ImovelResidencial } from "../models/ImovelResidencial";
-import { getConnection, getManager } from "typeorm"
-import fs from 'fs'
 import { PesquisaImoveisResidenciaisContador } from "../../../../data/protocols/pesquisa-imoveis-residenciais-contador";
 import { TotalizadorPesquisa } from "../models/totalizador-busca";
 import { ObtemFotosImoveis } from "../../../../data/protocols/obtem-fotos-imoveis";
+import { getManager } from "typeorm";
 export class PesquisaImoveisRepositorio implements CarregaImoveisResidenciaisDestaque, PesquisaImoveisResidenciais, PesquisaImoveisResidenciaisContador {
 
   constructor(private readonly obtemFotosImoveis: ObtemFotosImoveis) {

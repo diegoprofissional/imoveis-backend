@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { ObtemFotosImoveis } from '../../data/protocols/obtem-fotos-imoveis'
 import { EnumeraDiretorioFotos } from '../../data/protocols/enumera-diretorio-fotos'
-import config from '../../../config/env'
+import config from '../../../config/sistema.config'
 const diretorioFotos = config.DirFotos
 
 export class DiretorioAdapter implements ObtemFotosImoveis, EnumeraDiretorioFotos {
