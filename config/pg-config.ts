@@ -1,7 +1,7 @@
 import path from 'path'
 import { ConnectionOptions } from 'typeorm'
 
-console.log('models path', path.join(__dirname, '..', 'src/src/infra/db/postgres/models/index.js'))
+console.log('models path', path.join(__dirname, '..', '/src/infra/db/postgres/models/index.js'))
 
 export const config: ConnectionOptions = {
   type: 'postgres',
@@ -12,10 +12,10 @@ export const config: ConnectionOptions = {
   username: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DATABASE,
-  entities: [path.join(__dirname, '..', 'src/src/infra/db/postgres/models/index.js')],
+  entities: [path.join(__dirname, '..', '/src/infra/db/postgres/models/index.js')],
   synchronize: false,
   logging: true,
-  migrations: [path.join(__dirname, '..', 'src/src/infra/db/postgres/migrations/**/*.js')],
+  migrations: [path.join(__dirname, '..', '/src/infra/db/postgres/migrations/**/*.js')],
   cli: {
     migrationsDir: 'src/infra/db/postgres/migrations'
   }
