@@ -8,9 +8,7 @@ import { pesquisaImoveisResidenciaisContadorControllerFactory } from '../factori
 
 export default (router: Router): void => {
 
-
   router.get('/imoveis/destaques', adaptRoute(imoveisResidenciaisDestaquesControllerFactory()))
-
 
   router.get('/imoveis/residenciais-venda', adaptRoute(pesquisaImoveisResidenciaisControllerFactory()))
 
