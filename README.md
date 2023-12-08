@@ -70,7 +70,9 @@ You Aren't Gonna Need It (YAGNI)
 Keep It Simple, Silly (KISS)
 Composition Over Inheritance
 
+**CI/CD**
 
+Github Workflow
 
 **Notas para os programadores**
 
