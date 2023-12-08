@@ -1,5 +1,5 @@
 export interface EnumeraDiretorioFotos {
 
-  obterProximoDiretorio(): Promise<string>
+  obterProximoDiretorio(): Promise<{ proximoSubdiretorio: number, novoSubdiretorioFotos: string }>
 
 }

@@ -25,7 +25,7 @@ export class DiretorioAdapter implements ObtemFotosImoveis, EnumeraDiretorioFoto
 
   }
 
-  async obterProximoDiretorio(): Promise<string> {
+  async obterProximoDiretorio(): Promise<{ proximoSubdiretorio: number, novoSubdiretorioFotos: string }> {
 
     try {
 
@@ -37,7 +37,7 @@ export class DiretorioAdapter implements ObtemFotosImoveis, EnumeraDiretorioFoto
         fs.mkdirSync(novoSubdiretorioFotos);
 
 
-        return new Promise(resolve => resolve(novoSubdiretorioFotos))
+        return new Promise(resolve => resolve({ proximoSubdiretorio, novoSubdiretorioFotos }))
       } else {
         throw new Error()
       }
