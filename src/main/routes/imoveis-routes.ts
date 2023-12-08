@@ -11,6 +11,7 @@ export default (router: Router): void => {
 
   router.get('/imoveis/destaques', adaptRoute(imoveisResidenciaisDestaquesControllerFactory()))
 
+
   router.get('/imoveis/residenciais-venda', adaptRoute(pesquisaImoveisResidenciaisControllerFactory()))
 
   router.get('/imoveis/residenciais-venda/contador', adaptRoute(pesquisaImoveisResidenciaisContadorControllerFactory()))
