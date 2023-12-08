@@ -20,12 +20,12 @@ export class ImageUploadAdapter implements FileStorage {
 
   async upload(buffer: any, id: string): Promise<string> {
 
-    const proximoSubdiretorioImagens = this.enumeraDiretorioFotos.obterProximoDiretorio()
+    const proximoSubdiretorioImagens = await this.enumeraDiretorioFotos.obterProximoDiretorio()
 
 
     for (var i = 0; i < buffer.length; i++) {
 
-
+      console.log("proximo", proximoSubdiretorioImagens)
 
       await sharp(buffer[i].buffer).resize({ width: 1024, height: 768 }).toFile(proximoSubdiretorioImagens + "/" + slugify("casa") + i + '.jpg');
 
