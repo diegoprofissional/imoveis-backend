@@ -6,7 +6,7 @@
   "scripts": {
     "go": "cd dist/src/main && node server.js",
     "start": "ts-node --logError src/main/server.ts",
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc && cp ./package.json ./dist/ && cp .env ./dist/",
     "migration": "npx typeorm migration:create -n migration -d src/infra/db/postgres/migrations",
     "debug": "node --inspect=0.0.0.0:9222 --nolazy dist/main/server.js",
     "dev": "sucrase-node src/main/server.ts",
@@ -16,7 +16,9 @@
     "test:integration": "npm test -c jest-integration-config.js",
     "test:staged": "npm test --findRelatedTests",
     "test:coverage": "npm test --coverage",
-    "test:coveralls": "npm run test:coverage && coveralls < coverage/lcov.info"
+    "test:coveralls": "npm run test:coverage && coveralls < coverage/lcov.info",
+    "publicar-arquivos": "rimraf /var/www/imoveis_backend && cp ./dist/* /var/www/imoveis_backend",
+    "restart-server": "systemctl restart nginx.service"
   },
   "keywords": [],
   "author": "",
