@@ -18,7 +18,7 @@
     "test:coverage": "npm test --coverage",
     "test:coveralls": "npm run test:coverage && coveralls < coverage/lcov.info",
     "publicar-arquivos": "rm -R /var/www/imoveis_backend/ && mkdir /var/www/imoveis_backend && cp dist /var/www/imoveis_backend",
-    "restart-server": "pm2 kill && pm2 start dist/src/main/server.js"
+    "restart-server": "pm2 restart server"
   },
   "keywords": [],
   "author": "",
