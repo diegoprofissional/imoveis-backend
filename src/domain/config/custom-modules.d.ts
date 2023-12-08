@@ -3,5 +3,4 @@ declare module Express {
     idAnunciante?: string,
     locals?: any
   }
-
 }
