@@ -17,7 +17,7 @@
     "test:staged": "npm test --findRelatedTests",
     "test:coverage": "npm test --coverage",
     "test:coveralls": "npm run test:coverage && coveralls < coverage/lcov.info",
-    "publicar-arquivos": "rm -r /var/www/imoveis_backend/ && cp /dist /var/www/imoveis_backend",
+    "publicar-arquivos": "sudo rm -R /var/www/imoveis_backend/ && sudo mkdir /var/www/imoveis_backend && sudo cp dist /var/www/imoveis_backend",
     "restart-server": "pm2 kill && pm2 start /var/www/imoveis_backend/server.js"
   },
   "keywords": [],
