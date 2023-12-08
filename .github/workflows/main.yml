@@ -23,5 +23,4 @@ jobs:
       - run: |
           npm i
           npm run build
-          npm run publicar-arquivos
           npm run restart-server 
