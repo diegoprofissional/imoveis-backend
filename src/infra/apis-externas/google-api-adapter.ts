@@ -6,9 +6,6 @@ export class GoogleApiAdapter implements EnderecoService {
 
   async buscar(endereco: string): Promise<EnderecoAutocomplete[] | undefined> {
 
-    console.log('apiKey', process.env.GOOGLE_API_KEY)
-
-
     const response = await axios.get(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=' + ${endereco}  + '&types=geocode&language=pt-br&components=country:br&key=${process.env.GOOGLE_API_KEY}`)
 
 

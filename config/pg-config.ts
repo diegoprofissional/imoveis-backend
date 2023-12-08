@@ -1,9 +1,6 @@
 import path from 'path'
 import { ConnectionOptions } from 'typeorm'
 
-console.log("output", process.env.POSTGRES_DATABASE)
-console.log('teste', process.env.POSTGRES_PASSWORD)
-
 export const config: ConnectionOptions = {
   type: 'postgres',
   host: 'localhost',

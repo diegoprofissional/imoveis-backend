@@ -11,12 +11,8 @@ export class DiretorioAdapter implements ObtemFotosImoveis, EnumeraDiretorioFoto
   async obterFotos(diretorio: string): Promise<string[]> {
 
     let fotos: string[] = []
-    console.log('dirdir')
-    console.log(diretorioFotos + diretorio)
 
     const resultado: string[] = fs.readdirSync(diretorioFotos + diretorio)
-
-    console.log(diretorioFotos + diretorio)
 
 
     for (let i of resultado) {

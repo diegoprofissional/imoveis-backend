@@ -16,10 +16,6 @@ const credentials = {
   ca: ca
 };
 
-
-
-console.log("começo", process.env.POSTGRES_PASSWORD)
-
 createConnection(config).then(async (connection) => {
 
 
