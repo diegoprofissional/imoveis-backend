@@ -1,4 +1,4 @@
-https://github.com/diegoprofissional/imoveis-backend/actions/workflows/main.yml/badge.svg
+![Deploy badge](https://github.com/diegoprofissional/imoveis-backend/actions/workflows/main.yml/badge.svg)
 
 **Esse repositório se trata de um backend feito em Nodejs para fins de demonstração de boas práticas de código.**
 
