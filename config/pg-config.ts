@@ -1,6 +1,8 @@
 import path from 'path'
 import { ConnectionOptions } from 'typeorm'
 
+console.log('models path', path.join(__dirname, '..', 'src/src/infra/db/postgres/models/**/*.js'))
+
 export const config: ConnectionOptions = {
   type: 'postgres',
   host: 'localhost',
