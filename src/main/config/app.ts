@@ -5,7 +5,7 @@ import 'reflect-metadata'
 import path from 'path'
 const app = express()
 
-app.use(express.static(path.join(__dirname, '../../publico')));
+app.use(express.static('/var/www/publico'));
 
 setupMiddlewares(app)
 routes(app)
