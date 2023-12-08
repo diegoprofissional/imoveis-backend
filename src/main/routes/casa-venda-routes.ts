@@ -15,5 +15,9 @@ export default (router: Router): void => {
 
   router.get('/casas-venda/:id', adaptRoute(casaVendaPorIdControllerFactory()))
 
+  router.get('/teste', (req, res) => {
+    res.send('testando..')
+  })
+
 
 }
