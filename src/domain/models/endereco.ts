@@ -7,5 +7,6 @@ export interface Endereco {
   estado: string,
   pais: string
 
+
 }
 
