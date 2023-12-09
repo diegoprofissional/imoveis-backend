@@ -30,6 +30,7 @@ export class CasaVendaRepositorio implements CadastroCasaVendaRepositorio, Obter
       idEndereco: idEnderecoGerado,
       dormitorios: param.dormitorios,
       suites: param.suites,
+      descricao: param.descricao,
       banheiros: param.banheiros,
       capacidadeGaragem: param.capacidadeGaragem,
       preco: param.preco
