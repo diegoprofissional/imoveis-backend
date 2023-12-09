@@ -32,7 +32,7 @@ export class GoogleApiAdapter implements EnderecoService {
 
         if (prediction.terms.length === 5) {
 
-          enderecosAutocomplete.push({ escopoBusca: 'logradouro', descricao: prediction.description, endereco: { logradouro: prediction.terms[0].value, bairro: prediction.terms[1].value, cidade: prediction.terms[1].value, estado: prediction.terms[2].value, pais: prediction.terms[3].value } })
+          enderecosAutocomplete.push({ escopoBusca: 'logradouro', descricao: prediction.description, endereco: { logradouro: prediction.terms[0].value, bairro: prediction.terms[1].value, cidade: prediction.terms[2].value, estado: prediction.terms[3].value, pais: prediction.terms[4].value } })
 
         }
 
