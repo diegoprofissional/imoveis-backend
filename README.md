@@ -114,7 +114,8 @@ A descrição de onde as construções do sistema devem ficar obrigatoriamente.
 
 
 **Vídeo de demonstração**
-[<img src="https://www.youtube.com/watch?v=rP92OsDy7E4/hqdefault.jpg" width="50%">](https://www.youtube.com/watch?v=rP92OsDy7E4 "Demonstração do portfólio")
+<br>
+[<img src="https://i.ytimg.com/vi/rP92OsDy7E4/hqdefault.jpg" width="50%">](https://www.youtube.com/watch?v=rP92OsDy7E4 "Demonstração do portfólio")
 
 
 
